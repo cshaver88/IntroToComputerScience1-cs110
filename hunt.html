@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Huntington's Disease Prediction</title>
+</head>
+
+
+<body>
+<H2>Please Enter Your Information</H2>
+
+First Name:<input type=text size=20 id="firstname"><br>
+
+Last Name:<input type=text size=20 id="lastname"><br>
+
+DNA Sequence:<input type=text size=20 id="DNA"><br>
+
+<p><button onclick="display()">SUBMIT</button></p>
+
+<p id="string1"></p>
+<p id="string2"></p>
+<p id="string3"></p>
+<p id="string4"></p>
+<p id="string5"></p>
+<p id="string6"></p>
+
+
+<script>
+function countCAG(dna) {
+   var index=0;
+   var count=0;
+   var end=3;
+   while(index < dna.length){
+      if (dna.slice(index:end) == 'CAG')
+         count += 1;
+         i += 3;
+         end += 3;
+      else
+         return count;
+   }
+   return count;
+}
+
+function prediction(numCAG) {
+   if(numCAG <= 26)
+       print[0] = "Normal", "Unaffected";
+   else if (27 <= numCAG <= 35)
+       print[0] =  "Intermediate", "Unaffected";
+   else if (36 <= numCAG <=40)
+       print[0] = "Reduced Penetrance", "Somewhat Affected";
+   else
+       print[0] = "Full Penetrance", "Affected";
+   return print;
+}
+
+function display() {
+  var firstname = document.getElementById('firstname').value;
+  var lastname = document.getElementById('lastname').value;
+  var cAGS = countCAG(dna);
+  var pREDICTION = prediction(numCAG);
+  var dNA = document.getElementById('DNA').value;
+  var m1="Patient's Last Name:"  + lastname;
+  var m2="Patient's First Name: " + firstname;
+  var m3="DNA Sequence: " + dNA;
+  var m4="Number Of CAG Repeats: " + cAGS;
+  var m5="Risk Of Developing The Disease: " + pREDICTION;
+
+  document.getElementById("string1").innerHTML=m1;
+  document.getElementById("string2").innerHTML=m2;
+  document.getElementById("string3").innerHTML=m3;
+  document.getElementById("string4").innerHTML=m4;
+  document.getElementById("string5").innerHTML=m5;
+}
+
+alert("Begin");
+</script>
+
+</body>
+</html>

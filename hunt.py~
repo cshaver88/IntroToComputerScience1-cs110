@@ -1,0 +1,53 @@
+def get_input():
+    first=raw_input("Please enter your first name: ")
+    last=raw_input("Please enter your last name: ")
+    dna=raw_input("Please enter your DNA: ")
+    return (first, last, dna)
+
+
+
+
+def countCAG(dna):
+    """
+    >>> countCAG("C")
+    0
+    >>> countCAG("CAGCA")
+    1
+    >>> countCAG("CAGCATCAGCAGCAG")
+    1
+    >>> countCAG("CAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCA")
+    41
+    """
+    index = 0
+    count = 0
+    end = 3
+    while index <= len(dna):
+        if dna[index:end] == "CAG":
+            count += 1
+            index += 3
+            end += 3
+        else:
+            return count
+    return count
+
+
+def prediction(numCAG):
+    """
+    >>> prediction(26)
+    ('Normal', 'Unaffected')
+    >>> prediction(35)
+    ('Intermediate', 'Unaffected')
+    >>> prediction(38)
+    ('Reduced Penetrance', 'Somewhat Affected')
+    >>> prediction(45)
+    ('Full Penetrance', 'Affected')
+    """
+    if numCAG <= 26:
+        return 'Normal', 'Unaffected'
+    elif 27 <= numCAG <= 35:
+        return 'Intermediate', 'Unaffected'
+    elif 36 <= numCAG <= 40:
+        return 'Reduced Penetrance', 'Somewhat Affected'
+    else:
+        return 'Full Penetrance', 'Affected'
+

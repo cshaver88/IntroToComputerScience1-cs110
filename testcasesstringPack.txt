@@ -1,0 +1,476 @@
+Cayla Shaver
+Test Cases
+Project 2
+
+
+
+crshaver@hrn53010:~/CS110$ python stringPack.py -v 
+Trying: 
+    insert('', 'world!', 0) 
+Expecting: 
+    'world!' 
+ok 
+Trying: 
+    insert('world!', 'hello ', 0) 
+Expecting: 
+    'hello world!' 
+ok 
+Trying: 
+    insert('jack and', ' jill', 9) 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    insert('jill', 'jack', 1) 
+Expecting: 
+    'jjackill' 
+ok 
+Trying: 
+    insert('jack', 'jill', 2) 
+Expecting: 
+    'jajillck' 
+ok 
+Trying: 
+    insert('jack', 'jill', -1) 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    int2str(-1000092) 
+Expecting: 
+    '-1000092' 
+ok 
+Trying: 
+    int2str(-100) 
+Expecting: 
+    '-100' 
+ok 
+Trying: 
+    int2str(10) 
+Expecting: 
+    '10' 
+ok 
+Trying: 
+    int2str(47) 
+Expecting: 
+    '47' 
+ok 
+Trying: 
+    int2str(7564) 
+Expecting: 
+    '7564' 
+ok 
+Trying: 
+    int2str(0) 
+Expecting: 
+    '0' 
+ok 
+Trying: 
+    int2str(-1) 
+Expecting: 
+    '-1' 
+ok 
+Trying: 
+    lastOccur('hello', 'h') 
+Expecting: 
+    0 
+ok 
+Trying: 
+    lastOccur('mississippi', 'i') 
+Expecting: 
+    10 
+ok 
+Trying: 
+    lastOccur('banana', 'n') 
+Expecting: 
+    4 
+ok 
+Trying: 
+    lastOccur('erudite', 'z') 
+Expecting: 
+    -1 
+ok 
+Trying: 
+    lastOccur('puppy', 'u') 
+Expecting: 
+    1 
+ok 
+Trying: 
+    lastOccurMostFreqChar('') 
+Expecting: 
+    -1 
+ok 
+Trying: 
+    lastOccurMostFreqChar('hello') 
+Expecting: 
+    3 
+ok 
+Trying: 
+    lastOccurMostFreqChar('banana') 
+Expecting: 
+    5 
+ok 
+Trying: 
+    lastOccurMostFreqChar('erudite') 
+Expecting: 
+    6 
+ok 
+Trying: 
+    lastOccurMostFreqChar('puppy') 
+Expecting: 
+    3 
+ok 
+Trying: 
+    list2string (['h', 'e', 'l', 'l', 'o']) 
+Expecting: 
+    'hello' 
+ok 
+Trying: 
+    list2string (['b', 'y', 'e']) 
+Expecting: 
+    'bye' 
+ok 
+Trying: 
+    list2string (['p', 'u', 'p', 'p', 'y']) 
+Expecting: 
+    'puppy' 
+ok 
+Trying: 
+    list2string (['c', 'a', 't']) 
+Expecting: 
+    'cat' 
+ok 
+Trying: 
+    list2string (['', '']) 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    numOccur('mississippi', 'i') 
+Expecting: 
+    4 
+ok 
+Trying: 
+    numOccur('puppy', 'p') 
+Expecting: 
+    3 
+ok 
+Trying: 
+    numOccur('shoes', 's') 
+Expecting: 
+    2 
+ok 
+Trying: 
+    numOccur('banana', 'b') 
+Expecting: 
+    1 
+ok 
+Trying: 
+    numOccur('silly', 'z') 
+Expecting: 
+    0 
+ok 
+Trying: 
+    repeatStr('hello', 0) 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    repeatStr('cat', 2) 
+Expecting: 
+    'catcat' 
+ok 
+Trying: 
+    repeatStr('bye', 5) 
+Expecting: 
+    'byebyebyebyebye' 
+ok 
+Trying: 
+    repeatStr(' ', 1) 
+Expecting: 
+    ' ' 
+ok 
+Trying: 
+    repeatStr('bobby', 1) 
+Expecting: 
+    'bobby' 
+ok 
+Trying: 
+    repeatStr('hi', 0) 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    replace('hello,', 5, 'o') 
+Expecting: 
+    'helloo' 
+ok 
+Trying: 
+    replace('hello', 3, 'o') 
+Expecting: 
+    'heloo' 
+ok 
+Trying: 
+    replace('goodbye', 5, 'd') 
+Expecting: 
+    'goodbde' 
+ok 
+Trying: 
+    replace('cat', 0, 'm') 
+Expecting: 
+    'mat' 
+ok 
+Trying: 
+    replace('made', 1, ' ') 
+Expecting: 
+    'm de' 
+ok 
+Trying: 
+    replace('made', -1, 'a') 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    replace('made', 5, 'a') 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    sortStr('helloeoruuivdworlkd sidoaepkmkjfla') 
+Expecting: 
+    ' aadddeeefhiijkkkllllmooooprrsuuvw' 
+ok 
+Trying: 
+    sortStr('helloworld') 
+Expecting: 
+    'dehllloorw' 
+ok 
+Trying: 
+    sortStr('goodbye') 
+Expecting: 
+    'bdegooy' 
+ok 
+Trying: 
+    sortStr('racecar') 
+Expecting: 
+    'aaccerr' 
+ok 
+Trying: 
+    sortStr('') 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    sortStr('cat') 
+Expecting: 
+    'act' 
+ok 
+Trying: 
+    sortStr('alsdhgfohiwoejrhwkejfhiswhfiwuef') 
+Expecting: 
+    'adeeeffffghhhhhiiijjkloorssuwwww' 
+ok 
+Trying: 
+    sortStr('hellogoodbyeeveryone') 
+Expecting: 
+    'bdeeeeeghllnoooorvyy' 
+ok 
+Trying: 
+    sortStr('zzzxxyyyypppjsjsmnmnmnmn') 
+Expecting: 
+    'jjmmmmnnnnpppssxxyyyyzzz' 
+ok 
+Trying: 
+    sortStr('9876543210') 
+Expecting: 
+    '0123456789' 
+ok 
+Trying: 
+    sortStr('*&;</:^%">[]-$= #,@!') 
+Expecting: 
+    ' !"#$%&*,-/:;<=>@[]^' 
+ok 
+Trying: 
+    sortStr('!@#$%^&*0987654321') 
+Expecting: 
+    '!#$%&*0123456789@^' 
+ok 
+Trying: 
+    sortStr('ZXCVBNMASDFqwertyuiopasdfghjklzxcvbnmGHJKLQWERTYUIOP') 
+Expecting: 
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' 
+ok 
+Trying: 
+    sortStr2('helloeoruuivdworlkd sidoaepkmkjfla') 
+Expecting: 
+    ' aadddeeefhiijkkkllllmooooprrsuuvw' 
+ok 
+Trying: 
+    sortStr2('helloworld') 
+Expecting: 
+    'dehllloorw' 
+ok 
+Trying: 
+    sortStr2('goodbye') 
+Expecting: 
+    'bdegooy' 
+ok 
+Trying: 
+    sortStr2('racecar') 
+Expecting: 
+    'aaccerr' 
+ok 
+Trying: 
+    sortStr2('') 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    sortStr2('cat') 
+Expecting: 
+    'act' 
+ok 
+Trying: 
+    sortStr2('alsdhgfohiwoejrhwkejfhiswhfiwuef') 
+Expecting: 
+    'adeeeffffghhhhhiiijjkloorssuwwww' 
+ok 
+Trying: 
+    sortStr2('hellogoodbyeeveryone') 
+Expecting: 
+    'bdeeeeeghllnoooorvyy' 
+ok 
+Trying: 
+    sortStr2('zzzxxyyyypppjsjsmnmnmnmn') 
+Expecting: 
+    'jjmmmmnnnnpppssxxyyyyzzz' 
+ok 
+Trying: 
+    sortStr2('9876543210') 
+Expecting: 
+    '0123456789' 
+ok 
+Trying: 
+    sortStr2('*&;</:^%">[]-$= #,@!') 
+Expecting: 
+    ' !"#$%&*,-/:;<=>@[]^' 
+ok 
+Trying: 
+    sortStr2('!@#$%^&*0987654321') 
+Expecting: 
+    '!#$%&*0123456789@^' 
+ok 
+Trying: 
+    sortStr2('ZXCVBNMASDFqwertyuiopasdfghjklzxcvbnmGHJKLQWERTYUIOP') 
+Expecting: 
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' 
+ok 
+Trying: 
+    str2int('-1000092') 
+Expecting: 
+    -1000092 
+ok 
+Trying: 
+    str2int('-100') 
+Expecting: 
+    -100 
+ok 
+Trying: 
+    str2int('10') 
+Expecting: 
+    10 
+ok 
+Trying: 
+    str2int('47') 
+Expecting: 
+    47 
+ok 
+Trying: 
+    str2int('7564') 
+Expecting: 
+    7564 
+ok 
+Trying: 
+    str2int('0') 
+Expecting: 
+    0 
+ok 
+Trying: 
+    str2int('-1') 
+Expecting: 
+    -1 
+ok 
+Trying: 
+    string2list ('hello') 
+Expecting: 
+    ['h', 'e', 'l', 'l', 'o'] 
+ok 
+Trying: 
+    string2list ('bye') 
+Expecting: 
+    ['b', 'y', 'e'] 
+ok 
+Trying: 
+    string2list ('puppy') 
+Expecting: 
+    ['p', 'u', 'p', 'p', 'y'] 
+ok 
+Trying: 
+    string2list ('string') 
+Expecting: 
+    ['s', 't', 'r', 'i', 'n', 'g'] 
+ok 
+Trying: 
+    string2list ('') 
+Expecting: 
+    [] 
+ok 
+Trying: 
+    substring('cat', 0, 3) 
+Expecting: 
+    'cat' 
+ok 
+Trying: 
+    substring('hello', 0, 2) 
+Expecting: 
+    'he' 
+ok 
+Trying: 
+    substring('mississippi', 3, 8) 
+Expecting: 
+    'sissi' 
+ok 
+Trying: 
+    substring('puppy', 1, 5) 
+Expecting: 
+    'uppy' 
+ok 
+Trying: 
+    substring('jack and jill', 0, -1) 
+Expecting: 
+    '' 
+ok 
+Trying: 
+    substring('shoes', -1, 0) 
+Expecting: 
+    '' 
+ok 
+1 items had no tests: 
+    __main__ 
+13 items passed all tests: 
+   6 tests in __main__.insert 
+   7 tests in __main__.int2str 
+   5 tests in __main__.lastOccur 
+   5 tests in __main__.lastOccurMostFreqChar 
+   5 tests in __main__.list2string 
+   5 tests in __main__.numOccur 
+   6 tests in __main__.repeatStr 
+   7 tests in __main__.replace 
+  13 tests in __main__.sortStr 
+  13 tests in __main__.sortStr2 
+   7 tests in __main__.str2int 
+   5 tests in __main__.string2list 
+   6 tests in __main__.substring 
+90 tests in 14 items. 
+90 passed and 0 failed. 
+Test passed. 
